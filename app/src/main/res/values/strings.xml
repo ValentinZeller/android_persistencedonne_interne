@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PersistanceDonneeFichier</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="texte_sauvegard">Texte sauvegardé</string>
+    <string name="afficher">Afficher</string>
+    <string name="cache" />
+</resources>

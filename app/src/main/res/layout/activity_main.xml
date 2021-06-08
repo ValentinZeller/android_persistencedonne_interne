@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="410dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/sauvegarder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/afficher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/texte_sauvegard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow" />
+
+    <RadioGroup
+        android:id="@+id/saveOption"
+        android:layout_width="163dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <RadioButton
+            android:id="@+id/cacheButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cache" />
+
+        <RadioButton
+            android:id="@+id/fichierApplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fichier Application" />
+
+        <RadioButton
+            android:id="@+id/sharedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fichier Partagé" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autre" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
